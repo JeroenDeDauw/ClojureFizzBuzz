@@ -3,11 +3,14 @@
 (defn is-divisible [number devisor] (== 0 (mod number devisor)))
 
 (defn fizz-buzz [number]
-  (if (is-divisible number 3)
-    "Fizz"
-    (if (is-divisible number 5)
-      "Buzz"
-      (str number)
+  (if (is-divisible number 15)
+    "FizzBuzz"
+    (if (is-divisible number 3)
+      "Fizz"
+      (if (is-divisible number 5)
+        "Buzz"
+        (str number)
+      )
     )
   )
 )
@@ -17,5 +20,6 @@
 (deftest three-is-fizz (is (= "Fizz" (fizz-buzz 3))))
 (deftest five-is-buzz (is (= "Buzz" (fizz-buzz 5))))
 (deftest six-is-fizz (is (= "Fizz" (fizz-buzz 6))))
+(deftest fifteen-is-fizzbuzz (is (= "FizzBuzz" (fizz-buzz 15))))
 
 (run-tests)
