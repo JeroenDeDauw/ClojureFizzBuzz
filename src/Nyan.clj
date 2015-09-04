@@ -1,5 +1,7 @@
 (use 'clojure.test)
 
-(deftest one-plus-one-is-two (is (= 2 (+ 1 1))))
+(defn fizz-buzz [number] 1)
+
+(deftest one-is-returned-as-is (is (= 1 (fizz-buzz 1))))
 
 (run-tests)
