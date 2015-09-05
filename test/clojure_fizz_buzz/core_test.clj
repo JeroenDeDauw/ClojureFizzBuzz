@@ -1,19 +1,6 @@
-(use 'clojure.test)
-
-(defn is-divisible [number devisor] (== 0 (mod number devisor)))
-
-(defn fizz-buzz [number]
-  (if (is-divisible number 15)
-    "FizzBuzz"
-    (if (is-divisible number 3)
-      "Fizz"
-      (if (is-divisible number 5)
-        "Buzz"
-        (str number)
-      )
-    )
-  )
-)
+(ns clojure-fizz-buzz.core-test
+  (:require [clojure.test :refer :all]
+            [clojure-fizz-buzz.core :refer :all]))
 
 (deftest one-is-returned-as-is (is (= "1" (fizz-buzz 1))))
 (deftest two-is-returned-as-is (is (= "2" (fizz-buzz 2))))

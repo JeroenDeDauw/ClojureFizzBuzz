@@ -1,0 +1,11 @@
+*~
+bin
+classes
+lib
+releases
+target
+*.jar
+*.class
+/.lein-*
+pom.xml
+pom.xml.asc

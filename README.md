@@ -1,0 +1,2 @@
+[FizzBuzz kata](http://www.codingdojo.org/cgi-bin/index.pl?KataFizzBuzz) in [Clojure](http://clojure.org/)
+[![Build Status](https://travis-ci.org/JeroenDeDauw/ClojureFizzBuzz.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/ClojureFizzBuzz)
